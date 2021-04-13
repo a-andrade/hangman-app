@@ -16,6 +16,6 @@ window.addEventListener('keypress', (e) => {
 
 getPuzzle('2').then((puzzle) => {
     console.log(puzzle)
-}, (error) => {
+}).catch(() => {
     console.log(`Error: ${error}`)
-})
+}) 
