@@ -1,7 +1,7 @@
 const puzzleElement = document.querySelector('#puzzle')
 const guessesElement = document.querySelector('#guesses')
 
-const game1 = new Hangman('Cat mews', 2)
+const game1 = new Hangman('Cat', 2)
 
 puzzleElement.textContent = game1.puzzle
 guessesElement.textContent = game1.statusMessage
@@ -12,4 +12,10 @@ window.addEventListener('keypress', (e) => {
 
     puzzleElement.textContent = game1.puzzle
     guessesElement.textContent = game1.statusMessage
+})
+
+getPuzzle('2').then((puzzle) => {
+    console.log(puzzle)
+}, (error) => {
+    console.log(`Error: ${error}`)
 })
