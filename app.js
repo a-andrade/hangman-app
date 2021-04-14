@@ -18,4 +18,4 @@ getPuzzle('2').then((puzzle) => {
     console.log(puzzle)
 }).catch(() => {
     console.log(`Error: ${error}`)
-}) 
+})
